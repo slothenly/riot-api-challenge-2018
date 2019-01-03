@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RiotSharp;
 
 namespace League_API_Proj
 {
@@ -15,6 +16,7 @@ namespace League_API_Proj
         public Form1()
         {
             InitializeComponent();
+            var api = RiotApi.GetInstance("AN-ACTUAL-API-KEY");
         }
     }
 }
